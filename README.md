@@ -1,6 +1,8 @@
 # Coppers
 
-![](Supreme.jpg) To Develop this extension or use:
+![](Supreme.jpg) 
+
+To Develop this extension or use:
 
 1. Manually add chrome extension
    [docs](https://www.cnet.com/how-to/how-to-install-chrome-extensions-manually/)
