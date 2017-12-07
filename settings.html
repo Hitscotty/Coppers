@@ -1,19 +1,66 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="semantic.min.css"/>
-        <script src="semantic.min.js"></script>
-    </head>
-    <body class="ui fluid container" style="padding:20px">
-        <form class="ui form">
-            <div class="field">
-              <label>Product Identifier</label>
-              <input type="text" name="product-identifier" placeholder="Product Identifier">
+
+<head>
+    <link rel="stylesheet" href="semantic.min.css" />
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="semantic.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="ui fluid container" style="padding:20px">
+    <form class="ui form">
+        <div class="field">
+            <label>Product Identifier</label>
+            <input type="text" name="product-identifier" placeholder="Product Identifier">
+        </div>
+
+        <div class="field">
+            <label>Product #</label>
+            <input type="number" name="product-#" placeholder="Product #">
+        </div>
+
+        <h4 class="ui dividing header"> Adidas </h4>
+        <div class="field">
+            <div class="ui simple toggle checkbox">
+                <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                <label>Use Hotkeys</label>
             </div>
-            <div class="field">
-              <label>Product #</label>
-              <input type="number" name="product-#" placeholder="Product #">
+        </div>
+        <div id="hotkeys" class="hide field">
+            <div class="ui segment">
+                <div class="four fields">
+                    <div class="field">
+                        <label>Ctrl + Q</label>
+                        <input type="text" value="http://www.adidas.com/ca/apps/yeezy" name="hotkey-1" placeholder="hotkey">
+                    </div>
+                    <div class="field">
+                        <label>Ctrl + W</label>
+                        <input type="text" value="http://www.adidas.com/us/apps/yeezy" name="hotkey-2" placeholder="hotkey">
+                    </div>
+                    <div class="field">
+                        <label>Ctrl + E</label>
+                        <input type="text" value="http://www.adidas.com/uk/apps/yeezy" name="hotkey-3" placeholder="hotkey">
+                    </div>
+                </div>
             </div>
-            <button class="ui button" type="submit">Save</button>
-          </form>
-    </body>
+        </div>
+
+        <div id="no-hotkeys" class="field">
+            <label>Country</label>
+            <select class="ui dropdown" id="country">
+                <option value="ca">CA</option>
+                <option value="us">US</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+
+        <button class="ui button" type="submit">Save</button>
+    </form>
+</body>
+
 </html>
